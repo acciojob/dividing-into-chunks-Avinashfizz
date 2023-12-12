@@ -11,20 +11,21 @@ const divide = (arr, n) => {
 		if(sum+arr[j]<=n){
 			A.push(arr[j]);
 			sum+=arr[j];
-			
+			j++;
 		}else{
 			Ans[i]=A;
 			i++;
 			A =[];
 			A.push(arr[j]);
 			sum=arr[j];
-			
+			j++;
 		}
-		Ans.push(A);
-		j++;
+		
+		
 	}
+	Ans.push(A);
 	return Ans;
 };
 
 const n = prompt("Enter n: ");
-alert(JSON.stringify(divide(arr, n)));
+alert(JSON.stringify(divide(arr, n))); 
