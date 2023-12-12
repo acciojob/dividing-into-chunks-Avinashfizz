@@ -27,5 +27,5 @@ const divide = (arr, n) => {
 	return Ans;
 };
 
-const n = prompt("Enter n: ");
-alert(JSON.stringify(divide(arr, n))); 
+// const n = prompt("Enter n: ");
+// alert(JSON.stringify(divide(arr, n))); 
