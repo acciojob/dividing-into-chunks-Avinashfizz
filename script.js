@@ -11,17 +11,17 @@ const divide = (arr, n) => {
 		if(sum+arr[j]<=n){
 			A.push(arr[j]);
 			sum+=arr[j];
-			j++;
+	
 		}else{
 			Ans[i]=A;
 			i++;
 			A =[];
 			A.push(arr[j]);
 			sum=arr[j];
-			j++;
+			
 		}
 		Ans.push(A);
-		
+		j++;
 	}
 	
 	return Ans;
