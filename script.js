@@ -21,10 +21,10 @@ const divide = (arr, n) => {
 			sum=arr[j];
 			j++;
 		}
-		 Ans.push(A);
+		 
 		
 	}
-	
+	Ans.push(A);
 	return Ans;
 };
 
